@@ -16,7 +16,6 @@ function Dashboard() {
             const allForms = data.docs.map((doc) => ({ ...doc.data(), id: doc.id }));
             console.log(allForms);
             setForms(allForms);
-            console.log(allForms[0].questions.question1);
         };
         getForms();
     }, []);
@@ -24,18 +23,24 @@ function Dashboard() {
     return (
         <div>
             <img src={Logo} alt="" className="logo25" />
-
-            <Link to="/form" className="defaultButton">
-                Create a new form
-            </Link>
-            <p>Recent</p>
-            <p>My forms</p>
-            {forms.map((form) => (
-                <>
-                    <p>{form.form_name}</p>
-                    <p>{form.id}</p>
-                </>
-            ))}
+            <div className="dashboardHeader">
+                <h1 className="dashboardTitle">My forms</h1>
+                <Link to="/form" className="newFormButton">
+                    Create a new form
+                </Link>
+            </div>
+            <div className="recentFormContainer">
+                {forms.map((form) => (
+                    <div className="formDashboardCard">
+                        <Link className="formDashboardCardHeader" to={"../generatedform/" + form.generated_link}>
+                            <h3>{form.form_name}</h3>
+                        </Link>
+                        <div className="formDashboardCardInfo">
+                            <p>Info:</p>
+                        </div>
+                    </div>
+                ))}
+            </div>
         </div>
     );
 }

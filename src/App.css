@@ -1,0 +1,122 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Mulish", sans-serif;
+}
+
+.COLORS {
+    color: #fff;
+    color: #b2bdb9;
+    color: #9da5a2;
+    color: #8c908e;
+    color: #777;
+}
+
+.defaultButton {
+    padding: 7px;
+    border-radius: 10px;
+    background-color: #b2bdb9;
+    text-align: center;
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    display: inline-block;
+}
+
+.newFormButton {
+    padding: 7px;
+    border-radius: 10px;
+    background-color: #b2bdb9;
+    text-align: center;
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    -webkit-box-shadow: 5px 5px 9px -5px #403f3f;
+    box-shadow: 5px 5px 9px -5px #403f3f;
+}
+
+.newFormButton:hover {
+    background-color: #8f9996;
+}
+
+.defaultButton:hover {
+    cursor: pointer;
+    background-color: #9da5a2;
+}
+
+.logo25 {
+    width: 25%;
+}
+
+.formOptionsContainer {
+    display: flex;
+}
+
+.formOptionsContainer div {
+    padding: 10px;
+    background-color: #777;
+    color: #fff;
+    margin-left: 2px;
+    margin-top: 10px;
+    border-radius: 10px;
+    font-weight: bold;
+}
+
+.formOptionsContainer div:hover {
+    cursor: pointer;
+    background-color: #646464;
+}
+
+.addedQuestion {
+    display: flex;
+}
+
+.recentFormContainer {
+    display: flex;
+}
+
+.formDashboardCard {
+    display: flex;
+    flex-direction: column;
+}
+
+.formDashboardCardHeader {
+    padding: 50px;
+    background-color: #777;
+    color: #fff;
+    font-weight: bold;
+    text-decoration: none;
+    margin: 10px;
+    border-radius: 10px;
+    -webkit-box-shadow: 5px 5px 9px -5px #403f3f;
+    box-shadow: 5px 5px 9px -5px #403f3f;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 150px;
+}
+
+.formDashboardCardHeader:hover {
+    cursor: pointer;
+    background-color: #555;
+}
+
+.formDashboardCardInfo {
+    margin: 10px;
+}
+
+.dashboardTitle {
+    color: #555;
+    font-weight: bold;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.dashboardHeader {
+    display: flex;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
