@@ -29,6 +29,15 @@ function GeneratedForm() {
             {formQuestions.map((data) => (
                 <>
                     <p>{data.question}</p>
+                    {data.type === "text" ? (
+                        <input type="text" />
+                    ) : (
+                        <p>
+                            {formQuestions.map((multiple) => (
+                                <p>{multiple.choices}</p>
+                            ))}
+                        </p>
+                    )}
                     <p>{data.type}</p>
                 </>
             ))}
