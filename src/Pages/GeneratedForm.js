@@ -23,21 +23,13 @@ function GeneratedForm() {
     }, []);
     return (
         <div>
-            <img src={Logo} alt="" />
+            <img src={Logo} alt="" className="" />
             <h1>Gemerated Form Page - {formID}</h1>
             <h1>{formData.form_name}</h1>
             {formQuestions.map((data) => (
                 <>
                     <p>{data.question}</p>
-                    {data.type === "text" ? (
-                        <input type="text" />
-                    ) : (
-                        <p>
-                            {formQuestions.map((multiple) => (
-                                <p>{multiple.choices}</p>
-                            ))}
-                        </p>
-                    )}
+                    {data.type === "text" ? <input type="text" /> : <p>{data.choices}</p>}
                     <p>{data.type}</p>
                 </>
             ))}
